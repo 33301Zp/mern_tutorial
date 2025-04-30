@@ -3,6 +3,7 @@ import cors from "cors";
 import dbConfig from "./app/config/db.config.js";
 import tutorialRoutes from "./app/routes/tutorial.routes.js";
 import mongoose from "mongoose";
+require ("dotenv").config();
  
 const app = express();
  

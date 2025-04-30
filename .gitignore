@@ -1,0 +1,5 @@
+react-node-express-mongodb-crud/.env
+react-node-express-mongodb-crud/node_modules/
+frontend/dist/
+frontend/node_modules/
+node_modules/
