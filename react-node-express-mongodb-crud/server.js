@@ -26,7 +26,7 @@ tutorialRoutes(app);
  
 // Sync database
 mongoose
-    .connect(dbConfig.url)
+    .connect(process.env.DB_URI)
     .then(() => {
         console.log("Connected to the database!");
     })
