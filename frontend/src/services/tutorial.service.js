@@ -1,14 +1,14 @@
 import axios from "axios";
- 
-console.log("API URL:", process.env.REACT_APP_API_URL);
 
 const http = axios.create({
-    baseURL: process.env.REACT_APP_API_URL + "/api",
+    baseURL: import.meta.env.VITE_API_URL + "/api",
     headers: {
         "Content-Type": "application/json",
     },
 });  
- 
+
+console.log(import.meta.env.VITE_API_URL);
+
 const getAll = () => {
     return http.get("/tutorials");
 };
