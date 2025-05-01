@@ -6,6 +6,9 @@ const http = axios.create({
         "Content-Type": "application/json",
     },
 });
+
+console.log(process.env.REACT_APP_API_URL);
+
  
 const getAll = () => {
     return http.get("/tutorials");
